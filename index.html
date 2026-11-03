@@ -10,34 +10,41 @@
 <head>
 <title>my first HTML Page</title>
 </head>
+<style>
+    h1 {
+        color: blue;
+    }
+</style>
 <body>
+</body>
+<head>
     <h1>welcome to my Page</h1>
-    <p>Moikka, Nimeni on Jere Raunio ja harrastuksiini kuuluu pyöräily ja salilla käynti.</p>
+    <p style="color: blue;">Moikka, Nimeni on Jere Raunio ja harrastuksiini kuuluu pyöräily ja salilla käynti.</p>
 <img src="path/to/image.jpg" alt="description of image">
-<h2>harrastukseni</h2>
+<h2 style="color: red;">harrastukseni</h2>
 <ol>
-    <li>pyöräily</li>
-    <li>salilla käynti</li>
+    <li style="color: red;">pyöräily</li>
+    <li style="color: orange;">salilla käynti</li>
 </ol>
-<h2>tavoitteeni</h2>
+<h2 style="color: blue;">tavoitteeni</h2>
 <ol>
-    <li>kehittyä</li>
-    <li>oppia uusia taitoja</li>
+    <li style="color: blue;">kehittyä</li>
+    <li style="color: blue;">oppia uusia taitoja</li>
+    
 </ol><ul>
     <a href="https://www.laurea.fi">laurea</a>
     <table>
 <tr>
-<th>web development kurssi 1</th>
+<th style="color: blue;">web development kurssi 1</th>
 </tr>
 <tr>
-<td>kurssilla on käyty html:n käyttöä, joka on ollut mielenkiintoista</td>
+<td style="color: blue;">kurssilla on käyty html:n käyttöä, joka on ollut mielenkiintoista</td>
 </tr>
 <tr>
-<tr>
-<th>html käyttäminen</th>
+<th style="color: blue;">html käyttäminen</th>
 </tr>
 <tr>
-<td>html on ollut mielenkiintoista ja olen oppinut paljon uutta</td
+<td style="color: blue;">html on ollut mielenkiintoista ja olen oppinut paljon uutta</td>
 </tr>
 </table>
 <form>
@@ -47,3 +54,42 @@
     <input type="email" id="email" name="email"><br><br>
     <input type="submit" value="Submit">
 </form>
+<linkrel=:"stylesheet" href="style.css">
+<body style="background-color: rgb(138, 111, 132);">
+<h1 style="font-size: 2em;
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th, td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
+th {
+  background-color: #f2f2f2;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+label {
+    font-weight: bold;
+}
+input[type="text"], input[type="email"] {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
