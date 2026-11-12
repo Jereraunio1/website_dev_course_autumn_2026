@@ -55,7 +55,7 @@
     <input type="submit" value="Submit">
 </form>
 <linkrel=:"stylesheet" href="style.css">
-<body style="background-color: rgb(138, 111, 132);">
+<body style="background-color: rgb(149, 141, 147);">
 <h1 style="font-size: 2em;
 table {
   border-collapse: collapse;
@@ -93,3 +93,107 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #45a049;
 }
+<head></head>
+ <title>liukuva nappi</title>
+  <style>
+    .transition-button {
+      background-color: lightblue;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .transition-button:hover {
+      background-color: lightcoral;
+    }
+  </style>
+</head>
+<body>
+
+  <button class="transition-button">Hover me</button>
+
+
+<head></head>
+<title>animation box</title>
+<style>
+.animation-box {
+  width: 50px;
+  height: 50px;
+  background-color: lightgreen;
+  position: relative;
+  animation: moveBox 2s infinite alternate;
+}
+@keyframes moveBox {
+  from {
+    left: 0;
+  }
+  to {
+    left: 100px;
+  }
+}
+</style>
+</head>
+<body>
+  <div class="animation-box"></div>
+<title>Listan tyylittely</title>
+  <style>
+    .pseudo-list li:nth-child(odd) {
+      background-color: rgb(72, 186, 66);
+    }
+    
+    .pseudo-list li:nth-child(even) {
+      background-color: rgb(212, 38, 38);
+    }
+  </style>
+</head>
+<body>
+
+  <ul class="pseudo-list">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+  </ul>
+  <title>Kuvasuodatin</title>
+  <style>
+    /* CSS-tyylit harmaasuodattimelle */
+    .filter-image {
+      width: 300px; /* Säädetään kuva sopivan kokoiseksi */
+      height: auto;
+      filter: grayscale(100%); /* Aluksi täysin harmaa */
+      transition: filter 0.3s ease; /* Pehmeä siirtymä */
+    }
+    
+    .filter-image:hover {
+      filter: grayscale(0%); /* Hiiri päällä: värit takaisin */
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Harmaasuodatin-testi</h1>
+  <img src="8605920F-96B5-4E19-8061-FE36018A6BB9_1_105_c.jpeg" alt="Hissikuva" class="filter-image">
+  <title>Lainausmerkit pseudo-elementillä</title>
+  <style>
+    .quote {
+      position: relative;
+      padding-left: 20px;
+      font-style: italic;
+    }
+    
+    .quote::before {
+      content: '“';
+      font-size: 40px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: lightgray;
+    }
+  </style>
+</head>
+<body>
+
+  <blockquote class="quote">
+    This is a sample quote.
+  </blockquote>
