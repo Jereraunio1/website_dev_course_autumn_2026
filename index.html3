@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshop 01</title>
+    <link rel="stylesheet" href="style.css">
+    <!doctype html>
+    <html
+<head>
+<title>my first HTML Page</title>
+</head>
+<style>
+    h1 {
+        color: blue;
+    }
+</style>
+<body>
+</body>
+<head>
+    <h1>welcome to my Page</h1>
+    <p style="color: blue;">Moikka, Nimeni on Jere Raunio ja harrastuksiini kuuluu pyöräily ja salilla käynti.</p>
+<img src="path/to/image.jpg" alt="description of image">
+<h2 style="color: red;">harrastukseni</h2>
+<ol>
+    <li style="color: red;">pyöräily</li>
+    <li style="color: orange;">salilla käynti</li>
+</ol>
+<h2 style="color: blue;">tavoitteeni</h2>
+<ol>
+    <li style="color: blue;">kehittyä</li>
+    <li style="color: blue;">oppia uusia taitoja</li>
+    
+</ol><ul>
+    <a href="https://www.laurea.fi">laurea</a>
+    <table>
+<tr>
+<th style="color: blue;">web development kurssi 1</th>
+</tr>
+<tr>
+<td style="color: blue;">kurssilla on käyty html:n käyttöä, joka on ollut mielenkiintoista</td>
+</tr>
+<tr>
+<th style="color: blue;">html käyttäminen</th>
+</tr>
+<tr>
+<td style="color: blue;">html on ollut mielenkiintoista ja olen oppinut paljon uutta</td>
+</tr>
+</table>
+<form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name"><br><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br><br>
+    <input type="submit" value="Submit">
+</form>
+<linkrel=:"stylesheet" href="style.css">
+<body style="background-color: rgb(149, 141, 147);">
+<h1 style="font-size: 2em;
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th, td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
+th {
+  background-color: #f2f2f2;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+label {
+    font-weight: bold;
+}
+input[type="text"], input[type="email"] {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+<head></head>
+ <title>liukuva nappi</title>
+  <style>
+    .transition-button {
+      background-color: lightblue;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .transition-button:hover {
+      background-color: lightcoral;
+    }
+  </style>
+</head>
+<body>
+
+  <button class="transition-button">Hover me</button>
+
+
+<head></head>
+<title>animation box</title>
+<style>
+.animation-box {
+  width: 50px;
+  height: 50px;
+  background-color: lightgreen;
+  position: relative;
+  animation: moveBox 2s infinite alternate;
+}
+@keyframes moveBox {
+  from {
+    left: 0;
+  }
+  to {
+    left: 100px;
+  }
+}
+</style>
+</head>
+<body>
+  <div class="animation-box"></div>
+<title>Listan tyylittely</title>
+  <style>
+    .pseudo-list li:nth-child(odd) {
+      background-color: rgb(72, 186, 66);
+    }
+    
+    .pseudo-list li:nth-child(even) {
+      background-color: rgb(212, 38, 38);
+    }
+  </style>
+</head>
+<body>
+
+  <ul class="pseudo-list">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+  </ul>
+  <title>Kuvasuodatin</title>
+  <style>
+    /* CSS-tyylit harmaasuodattimelle */
+    .filter-image {
+      width: 300px; /* Säädetään kuva sopivan kokoiseksi */
+      height: auto;
+      filter: grayscale(100%); /* Aluksi täysin harmaa */
+      transition: filter 0.3s ease; /* Pehmeä siirtymä */
+    }
+    
+    .filter-image:hover {
+      filter: grayscale(0%); /* Hiiri päällä: värit takaisin */
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Harmaasuodatin-testi</h1>
+  <img src="8605920F-96B5-4E19-8061-FE36018A6BB9_1_105_c.jpeg" alt="Hissikuva" class="filter-image">
+  <title>Lainausmerkit pseudo-elementillä</title>
+  <style>
+    .quote {
+      position: relative;
+      padding-left: 20px;
+      font-style: italic;
+    }
+    
+    .quote::before {
+      content: '“';
+      font-size: 40px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: lightgray;
+    }
+  </style>
+</head>
+<body>
+
+  <blockquote class="quote">
+    This is a sample quote.
+  </blockquote>
